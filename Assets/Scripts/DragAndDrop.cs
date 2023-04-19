@@ -58,6 +58,7 @@ public class DragAndDrop : MonoBehaviour
         {
             Debug.Log("Stay here"); 
             m_Animator.SetBool("OnPourBool",true);
+            cardDisplay.SendData();
             // To Play Particle
             StartCoroutine(PlayParticle());
             // particleSystem.Play();
@@ -77,7 +78,6 @@ public class DragAndDrop : MonoBehaviour
         yield return new WaitForSeconds(delay);
         particleSystem.Play();
         // ingredientBehaviour.SendData();
-        cardDisplay.SendData();
     }
 
     private void OnTriggerStay(Collider other)
