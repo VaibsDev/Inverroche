@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336505122}
   m_LocalRotation: {x: -0.7062118, y: -0.001096176, z: 0.012231411, w: 0.7078942}
-  m_LocalPosition: {x: -0.020339914, y: 0.009643185, z: -0.009658968}
+  m_LocalPosition: {x: -0.03, y: 0.76, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 482348179377164809}
@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336505122}
   serializedVersion: 7
-  lengthInSec: 2.5
+  lengthInSec: 2
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.4
+      scalar: 0.27
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.7264151, g: 0.47856942, b: 0, a: 1}
+      maxColor: {r: 0.2625206, g: 0.6415094, b: 0.057493754, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -606,7 +606,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4758,7 +4758,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d0288ca178cd1d14db9360e9324bb4e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4850,7 +4850,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519002333439437697}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -4119317738140548247, guid: 29b552b6089841441939049750e17ae1, type: 3}
 --- !u!23 &746038100809382827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4903,8 +4903,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.6211226, y: 0.8266831, z: 1.539438}
+  m_Center: {x: -0.032690644, y: 0.39735788, z: -0.008280515}
 --- !u!114 &24971515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4917,9 +4917,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c4fbac2eb8da14e860192aec3be6c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 30
   cardDisplay: {fileID: 4746722076375987720}
   tab: {fileID: 0}
+  downArrowTab: {fileID: 0}
   particleSystem: {fileID: 1336505125}
   delay: 2.2
 --- !u!54 &525300958
@@ -4986,7 +4987,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 11400000, guid: f00d1236118d7f146baf0494ad08e6b1, type: 2}
   ingredientDetailBox: {fileID: 0}
-  name: {fileID: 0}
+  cardName: {fileID: 0}
   description: {fileID: 0}
   displayImage: {fileID: 0}
-  listName: {fileID: 7560550032860797350, guid: eee19b4851143bf47af425cfbc61bd84, type: 3}
+  ingredientTabBehviour: {fileID: 0}
+  ingredientTabHolder: {fileID: 0}
