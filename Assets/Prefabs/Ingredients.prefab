@@ -4917,7 +4917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c4fbac2eb8da14e860192aec3be6c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 100
   cardDisplay: {fileID: 4746722076375987720}
   tab: {fileID: 0}
   downArrowTab: {fileID: 0}
@@ -4931,7 +4931,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519002333439437697}
   serializedVersion: 2
-  m_Mass: 50
+  m_Mass: 100
   m_Drag: 10000
   m_AngularDrag: 1
   m_UseGravity: 1
