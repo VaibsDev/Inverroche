@@ -6,9 +6,11 @@ public class ObjectReset : MonoBehaviour
 {
     // public GameObject objectToHide;
     private Vector3 spawnPosition;
-    private Vector3 currentPosition;
+    // private Vector3 currentPosition;
     private float startTime= 0f;
     public float lerpTime=3.0f;
+    public bool isResetting = false;
+    // Vector3 targetPosition;
 
     void Start()
     {
@@ -18,22 +20,37 @@ public class ObjectReset : MonoBehaviour
 
     public void ReturntToBase()
     {
+        // StopCoroutine("BackToBase");
         StartCoroutine("BackToBase");
     }
 
-    IEnumerator BackToBase()
-    {  
-        startTime = 0;
-        Debug.Log("return to base");
-        while(startTime<lerpTime)
-        {
-        transform.position = Vector3.Lerp(transform.position,spawnPosition,startTime/lerpTime);
-        startTime +=Time.deltaTime;
-        yield return null;
-        // this.transform.position = spawnPosition;
-        }
-    }
+    // IEnumerator BackToBase()
+    // {  
+    //     startTime = 0;
+    //     Debug.Log("return to base");
+    //     while(startTime<lerpTime)
+    //     {
+    //         transform.position = Vector3.Lerp(transform.position,spawnPosition,startTime/lerpTime);
+    //         startTime +=Time.deltaTime;
+    //         yield return null;
+    //     // this.transform.position = spawnPosition;
+    //     }
+    // }
 
+    IEnumerator BackToBase(Vector3 targetPosition)
+    {
+        float distance = Vector3.Distance(transform.position, targetPosition);
+        float duration = distance / 10.0f; // you can adjust the division factor to control the speed
+        float time = 0;
+        Vector3 startPosition = transform.position;
+        while (time < duration)
+        {
+            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPosition;
+    }
     // public void HideObject() 
     // {
     //     objectToHide.SetActive(false);

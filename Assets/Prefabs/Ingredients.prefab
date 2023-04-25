@@ -55,7 +55,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 2.5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.17
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -606,7 +606,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 9.8
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4917,8 +4917,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c4fbac2eb8da14e860192aec3be6c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 50
   cardDisplay: {fileID: 4746722076375987720}
+  targetObject: {fileID: 0}
+  lerpSpeed: 1
   tab: {fileID: 0}
   downArrowTab: {fileID: 0}
   particleSystem: {fileID: 1336505125}
@@ -4973,6 +4975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lerpTime: 3
+  isResetting: 0
 --- !u!114 &4746722076375987720
 MonoBehaviour:
   m_ObjectHideFlags: 0
