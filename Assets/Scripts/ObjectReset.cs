@@ -21,7 +21,7 @@ public class ObjectReset : MonoBehaviour
     public void ReturntToBase()
     {
         // StopCoroutine("BackToBase");
-        StartCoroutine("BackToBase");
+        StartCoroutine("BackToBase", spawnPosition);
     }
 
     // IEnumerator BackToBase()
@@ -40,7 +40,7 @@ public class ObjectReset : MonoBehaviour
     IEnumerator BackToBase(Vector3 targetPosition)
     {
         float distance = Vector3.Distance(transform.position, targetPosition);
-        float duration = distance / 10.0f; // you can adjust the division factor to control the speed
+        float duration = distance / lerpTime; // you can adjust the division factor to control the speed
         float time = 0;
         Vector3 startPosition = transform.position;
         while (time < duration)

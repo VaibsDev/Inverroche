@@ -168,7 +168,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -606,7 +606,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 9.8
+      scalar: 8.8
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4974,7 +4974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60112381a72d7764ebbdae43b41dfa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpTime: 3
+  lerpTime: 50
   isResetting: 0
 --- !u!114 &4746722076375987720
 MonoBehaviour:
