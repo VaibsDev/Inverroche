@@ -15,7 +15,7 @@ public class ImageOnMouseOver : MonoBehaviour
     {
         // Set the canvas image to be visible
         canvasImage.SetActive(true);
-        Debug.Log("Appear Image");
+        // Debug.Log("Appear Image");
         tab.SetActive(false);
         downArrow.SetActive(true);
     }

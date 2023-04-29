@@ -9,9 +9,9 @@ public class Card : ScriptableObject
     public string description;
     public Texture2D displayImage;
 
-    public void Print()
-    {
+    // public void Print()
+    // {
         // Debug.Log(name + ":" + description);
-    }
+    // }
     
 }

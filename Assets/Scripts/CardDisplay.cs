@@ -25,13 +25,13 @@ public class CardDisplay : MonoBehaviour
         cardName.text = card.cardName;
         description.text = card.description;
         displayImage.texture = card.displayImage;
-        card.Print();
+        // card.Print();
     }
     
 
     private void OnMouseOver() 
     {
-        Debug.Log("OnMouseOver");
+        // Debug.Log("OnMouseOver");
         SetData();
         ingredientDetailBox.gameObject.SetActive(true);
     }
