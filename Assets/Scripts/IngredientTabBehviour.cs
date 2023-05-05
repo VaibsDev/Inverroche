@@ -8,7 +8,6 @@ public class IngredientTabBehviour : MonoBehaviour
 {
     // public Card card;
     [SerializeField] private TextMeshProUGUI cardName;
-    // [SerializeField] private Button cancleButton;
 
     public void SetTab(string card)
     {

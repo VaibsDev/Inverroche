@@ -8,10 +8,4 @@ public class Card : ScriptableObject
     public string cardName;
     public string description;
     public Texture2D displayImage;
-
-    // public void Print()
-    // {
-        // Debug.Log(name + ":" + description);
-    // }
-    
 }

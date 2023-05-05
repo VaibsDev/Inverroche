@@ -7,7 +7,6 @@ using TMPro;
 public class CardDisplay : MonoBehaviour
 {
     public Card card;
-    // public GameObject ObjctToDisable;
     [Header("Ingredient Detail")]
     [SerializeField] private Transform ingredientDetailBox;
     public TextMeshProUGUI cardName;
@@ -49,12 +48,6 @@ public class CardDisplay : MonoBehaviour
 
     public void SendData()
     {
-        // AddIngredient(card.cardName);
         AddIngredient(cardName.text);
     }
-
-    // public void SendData()
-    // {
-    //     AddIngredient(title);
-    // }
 }
